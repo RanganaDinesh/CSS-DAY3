@@ -1,0 +1,68 @@
+.div1{
+    display: flex;
+}
+img{
+    top: 1130px;
+    left: 0px;
+    z-index: -1;
+    position: absolute;
+}
+h1{
+    text-align: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: aqua;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    animation: box1 4s linear infinite;
+    position: relative;
+}
+@keyframes box1{
+    from {left:0px;}
+    to {
+        left: 150px;
+    }
+}
+.section{
+    margin-top: 50px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color:orange;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1 / 3;
+  }
+  .itema {
+    grid-row: 1 / span 2;
+  }
+  .box:hover{
+    width: 200px;
+    transition: 4s;
+    background-color: red;
+
+  }
+  .boxc{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    background-color: orange;
+    border-radius: 50%;
+  }
